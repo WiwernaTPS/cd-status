@@ -1,5 +1,5 @@
 plugins {
-    id 'net.fabricmc.fabric-loom' version '1.7.3'
+    id 'net.fabricmc.fabric-loom' version '1.9.2'
 }
 
 version = '2.0.0'
@@ -7,6 +7,7 @@ group = 'wiwernatps.cdstatus'
 
 repositories {
     mavenCentral()
+    maven { url = 'https://fabricmc.net' }
     maven { url = 'https://shedaniel.me' }
     maven { url = 'https://terraformersmc.com' }
 }
