@@ -1,9 +1,8 @@
 pluginManagement {
     repositories {
-        gradlePluginPortal()
         maven { url = "https://maven.fabricmc.net/" }
+        gradlePluginPortal()
         mavenCentral()
     }
 }
-
 rootProject.name = 'cd-status'
