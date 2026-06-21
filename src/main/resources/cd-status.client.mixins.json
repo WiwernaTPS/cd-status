@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "wiwernatps.cdstatus.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ItemCooldownsAccessor",
+    "CooldownInstanceAccessor",
+    "GuiGraphicsMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "cd-status",
+  "version": "2.0.0",
+  "name": "CD Status",
+  "description": "Customizable cooldown display with advanced positioning. Discord: @wiwernatps",
+  "authors": ["@wiwernatps"],
+  "license": "MIT",
+  "icon": "assets/cd-status/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": ["wiwernatps.cdstatus.ChangesForCooldown"],
+    "client": ["wiwernatps.cdstatus.client.ChangesForCooldownClient"],
+    "modmenu": ["wiwernatps.cdstatus.client.config.ModMenuIntegration"]
+  },
+  "mixins": [
+    "cd-status.mixins.json",
+    {
+      "config": "cd-status.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.6",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
