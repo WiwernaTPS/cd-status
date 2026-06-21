@@ -22,8 +22,10 @@ dependencies {
     modImplementation "me.shedaniel.cloth:cloth-config-fabric:17.0.144"
 }
 
-loom {
-    generateModJavadoc = true
+configurations.configureEach {
+    if (name.toLowerCase().contains("javadoc")) {
+        transitive = false
+    }
 }
 
 tasks.withType(Javadoc).configureEach {
