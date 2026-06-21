@@ -1,6 +1,6 @@
 buildscript {
     repositories {
-        maven { url = "https://fabricmc.net" }
+        maven { url = "https://maven.fabricmc.net/" }
         gradlePluginPortal()
         mavenCentral()
     }
