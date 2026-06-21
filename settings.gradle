@@ -8,5 +8,4 @@ pluginManagement {
         mavenCentral()
     }
 }
-
 rootProject.name = 'cd-status'
