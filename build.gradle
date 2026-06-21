@@ -21,11 +21,9 @@ dependencies {
     modImplementation "com.terraformersmc:modmenu:13.0.0"
     modImplementation "me.shedaniel.cloth:cloth-config-fabric:17.0.144"
 }
+
 loom {
-    configurations.configureEach {
-        it.transitive = true
-    }
-    disableAsmExtractor = true 
+    generateModJavadoc = true
 }
 
 tasks.withType(Javadoc).configureEach {
